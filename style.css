@@ -1,0 +1,361 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ========================= SIDE BAR ============================= */
+.dashlogo {
+ display: flex;
+ align-items: center;
+ grid-area: a;
+ padding-left: 2rem;
+}
+
+.dashlogo span {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 2rem;
+}
+
+a:hover {
+    background-color: black;
+}
+
+a svg {
+    margin-right: 2rem;
+}
+
+.home {
+    grid-area: b;
+}
+
+.profile {
+    grid-area: c;
+}
+
+.msg {
+    grid-area: d;
+}
+
+.history {
+    grid-area: e;
+}
+
+.task {
+    grid-area: f;
+}
+
+.comm {
+    grid-area: g;
+}
+
+.settings {
+    grid-area: h;
+}
+
+.support {
+    grid-area: i;
+}
+
+.privacy {
+    grid-area: j;
+}
+
+
+.sidebar {
+    display: grid;
+    color: white;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(60, 179, 113);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    grid-auto-rows: 50px;
+    grid-template-areas: 
+    "a"
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "."
+    "h"
+    "i"
+    "j";
+}
+
+
+/* ========================= SIDE BAR ============================= */
+
+/* =========================== HEADER============================== */
+header {
+    display: grid;
+    margin-left: 300px;
+    background-color: white;
+    height: 190px;
+    padding: 1rem 2rem 1rem 2rem;
+    grid-auto-columns: 3fr;
+    grid-template-areas: 
+    "a a a . b"
+    "c c c . d"
+    ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    grid-area: a;
+}
+
+.search-bar input {
+    width: 100%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
+    grid-area: b;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.user-greet {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    grid-area: c;
+}
+
+.user-greet img {
+    border-radius: 50%;
+    width: 75px;
+}
+
+.user-greet p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.user-control {
+    display: flex;
+    grid-area: d;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+
+.user-control button {
+    width: 75px;
+    padding: .6rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(60, 179, 113);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.user-control button:hover {
+    background-color: rgb(34, 104, 65);
+}
+
+.user-control button:active {
+    background-color: rgb(60, 179, 113);
+}
+
+/* =========================== HEADER============================== */
+
+/* =========================== MAIN ============================== */
+
+.main {
+    margin-left: 300px;
+    display: grid;
+    padding: 2rem;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 200px;
+    grid-template-areas: 
+    "a a a a b"
+    'a a a a  c'
+    ;
+    justify-content: center;
+}
+
+.main p {
+    color: hsl(0, 0%, 45%);
+}
+.main h3 {
+    margin-bottom: 1rem;
+}
+
+/* ----------------- YOUR PROJECTS SECTION --------- */
+.your-projects {
+    grid-area: a;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 210px;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1.8rem 1rem 1.8rem 1rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-left: #00AEF7 solid 5px;
+}
+
+.proj-icons {
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 1.2rem;
+display: flex;
+gap: 1.5rem
+}
+
+.project-content {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: 
+    'a b'
+    'c d'
+    'e f'
+    ;
+    gap: 1.5rem
+}
+
+.ap {
+    grid-area: a;
+}
+
+.bp {
+    grid-area: b;
+}
+
+.cp {
+    grid-area: c;
+}
+
+.dp {
+    grid-area: d;
+}
+
+.ep {
+    grid-area: e;
+}
+
+.fp {
+    grid-area: f;
+}
+
+/* ----------------- YOUR PROJECTS SECTION --------- */
+
+/* ----------------- ANNOUNCEMENTS SECTION --------- */
+
+.annoucement {
+    grid-area: b;
+}
+
+.announce-box {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 370px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: .9rem;
+}
+
+
+
+.an-text {
+    margin-bottom: .8rem;
+    margin-top: .5rem;
+}
+
+.site, .com {
+    padding-bottom: 1rem;
+    border-bottom: hsl(0, 0%, 45%) solid 1px;
+}
+
+
+/* ----------------- ANNOUNCEMENTS SECTION --------- */
+
+/* ----------------- TRENDING SECTION -------------- */
+
+.trending {
+grid-area: c;
+margin-top: 1rem;
+}
+
+.trend-box {
+width: 320px;
+height: 320px;
+padding: 1rem;
+background-color: white;
+border-radius: .5rem;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+font-size: .9rem;
+}
+
+.trend-box img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.trend-users {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+/* ----------------- TRENDING SECTION -------------- */
+
+
+/* =========================== MAIN ============================== */
